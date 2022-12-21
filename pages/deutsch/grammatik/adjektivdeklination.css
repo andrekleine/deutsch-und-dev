@@ -1,0 +1,49 @@
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 1rem 0.2rem;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.kasus-col {
+    width: 3rem;
+}
+
+.kasus {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mask {
+  color: blue;
+  font-weight: bold;
+}
+
+.fem {
+  color: rgb(218, 117, 134);
+  font-weight: bold;
+}
+
+.neut {
+  color: green;
+  font-weight: bold;
+}
+
+.plu {
+  color: orange;
+  font-weight: bold;
+}
+
+.borderless-right {
+    border-right: 1px transparent solid;
+}
+
+.borderless-bottom {
+    border-bottom: 1px transparent solid;    
+}

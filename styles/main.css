@@ -1,0 +1,41 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  grid-template-rows: repeat(3, 1fr);  
+  grid-template-areas: 
+    "deutschland-1 deutschland-1 deutschland-1"
+    "deutsch-1 deutsch-2 deutsch-3"
+    "web-dev-1 web-dev-1 web-dev-2";
+  gap: 1rem;
+
+}
+
+.deutschland-1 {
+  grid-area: deutschland-1;
+  background-color: red;
+}
+
+.deutsch-1 {
+  grid-area: deutsch-1;
+  background-color: green;
+}
+
+.deutsch-2 {
+  grid-area: deutsch-2;
+  background-color: yellow;
+}
+
+.deutsch-3 {
+  grid-area: deutsch-3;
+  background-color: blue;
+}
+
+.web-dev-1 {
+  grid-area: web-dev-1;
+  background-color: purple;
+}
+
+.web-dev-2 {
+  grid-area: web-dev-2;
+  background-color: orange;
+}
