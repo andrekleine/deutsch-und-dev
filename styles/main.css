@@ -1,41 +1,81 @@
 main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);  
-  grid-template-rows: repeat(3, 1fr);  
-  grid-template-areas: 
-    "deutschland-1 deutschland-1 deutschland-1"
-    "deutsch-1 deutsch-2 deutsch-3"
-    "web-dev-1 web-dev-1 web-dev-2";
-  gap: 1rem;
-
+  display: flex;
+  flex-direction: column;
 }
 
-.deutschland-1 {
-  grid-area: deutschland-1;
-  background-color: red;
+main > h1 {
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+  margin-top: 1.2rem;
+  color: #8d4304;
 }
 
-.deutsch-1 {
-  grid-area: deutsch-1;
-  background-color: green;
+@media (min-width: 640px) {
+  main > h1 {
+    font-size: 1.6rem;
+  }
 }
 
-.deutsch-2 {
-  grid-area: deutsch-2;
-  background-color: yellow;
+section {
+  display: flex;
+  justify-content: space-between;
 }
 
-.deutsch-3 {
-  grid-area: deutsch-3;
-  background-color: blue;
+article {
+  height: 20vh;
+  position: relative;
+  color: #ffffff;
+  -webkit-text-stroke: 0.3px black;
+  font-size: 1.5rem;
 }
 
-.web-dev-1 {
+article > h3 {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  margin: 0;
+}
+
+.col-3 {
+  background: url(/images/sanssouci.jpeg) center 60%;
+  width: 100%;
+}
+
+.col-1 {
+  background-color: black;
+  width: 30%;
+}
+
+.col-1 > h3 {
+  font-size: 1.3rem;
+  word-break: break-word;
+  bottom: 5%;
+}
+
+@media (min-width: 640px) {
+  .col-1 > h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.col-2 {
   grid-area: web-dev-1;
-  background-color: purple;
+  background-color: #f27405;
+  width: 65%;
 }
 
-.web-dev-2 {
-  grid-area: web-dev-2;
-  background-color: orange;
+#deutsch-1 {
+  background-color: #f1a008;
+}
+
+#deutsch-2 {
+  background-color: #7fd2f2;
+}
+
+#deutsch-3 {
+  background-color: #f2bc8d;
+}
+
+#dev-2 {
+  background-color: #7fd2f2;
 }
