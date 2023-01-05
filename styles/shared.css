@@ -12,7 +12,7 @@ body {
   grid-template-areas:
     'header'
     'main'
-    'footer';  
+    'footer';
 }
 
 .backdrop {
@@ -158,8 +158,14 @@ header {
 main {
   grid-area: main;
   margin-top: 9vh;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1.2rem;
   font-family: 'Fredoka One', sans-serif;
+}
+
+@media (min-width: 640px) {
+  main {
+    padding: 0 2.2rem;
+  }
 }
 
 footer {
@@ -171,24 +177,19 @@ footer {
   background-color: #000;
   color: #fff;
   height: 10vh;
-}
-
-footer {
-  margin: 0;
-  color: white;
-  font-family: 'Roboto', sans-serif;    
-  padding: 1vh 0;
+  display: flex;  
 }
 
 ul {
   list-style: none;
-  padding: 0;  
+  width: 100%;  
   display: flex;
-  justify-content: space-around;  
+  justify-content: space-around;
+  align-items: center;
 }
 
-.svg {  
-  fill: #fff;  
+.svg {
+  fill: #fff;
 }
 
 @media (min-width: 1024px) {
