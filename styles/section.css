@@ -11,6 +11,8 @@ main {
 
 main img {
   width: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 article h1,
