@@ -6,15 +6,6 @@
   padding: 0;
 }
 
-body {
-  margin: 0;
-  display: grid;
-  grid-template-areas:
-    'header'
-    'main'
-    'footer';
-}
-
 .backdrop {
   display: none;
   position: fixed;
@@ -23,12 +14,12 @@ body {
   left: 0;
   z-index: 100;
   width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   transition: opacity 0.2s linear;
 }
 
 header {
-  grid-area: header;
   position: fixed;
   width: 100%;
   height: 10vh;
@@ -88,14 +79,13 @@ header {
 }
 
 .mobile-nav {
-  position: fixed;
+  position: fixed;  
   z-index: 101;
   top: 0;
   left: 0;
   background: #fff;
-  width: 22rem;
-  height: 50vh;
-  padding: 0 1.8rem;
+  width: 80vw;
+  height: 50vh;  
   border-radius: 5px;
   transform: translateX(-100%);
   transition: transform 300ms ease-out;
@@ -103,19 +93,21 @@ header {
 
 .mobile-nav ul {
   list-style: none;
-  height: 90%;
-  padding: 0;
+  padding: 5vh 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: column;  
   text-align: center;
+}
+
+.mobile-nav li {
+  margin: 2rem 0;
 }
 
 .mobile-nav a {
   text-decoration: none;
   color: #8c4303;
-  text-transform: uppercase;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+  font-family: "Fredoka One", sans-serif;
 }
 
 .open {
@@ -156,7 +148,6 @@ header {
 }
 
 main {
-  grid-area: main;
   padding: 0 1.2rem;
 }
 
@@ -167,7 +158,6 @@ main {
 }
 
 footer {
-  grid-area: footer;
   width: 100vw;
   position: fixed;
   bottom: 0;
