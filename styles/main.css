@@ -7,6 +7,8 @@
 main {
   display: flex;
   flex-direction: column;
+  margin-top: 9vh;  
+  font-family: 'Fredoka One', sans-serif;
 }
 
 main > h1 {

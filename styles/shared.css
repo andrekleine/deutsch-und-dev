@@ -157,9 +157,7 @@ header {
 
 main {
   grid-area: main;
-  margin-top: 9vh;
   padding: 0 1.2rem;
-  font-family: 'Fredoka One', sans-serif;
 }
 
 @media (min-width: 640px) {
