@@ -6,6 +6,15 @@
   padding: 0;
 }
 
+:root {
+  --blue: #80d2f2;
+  --mustard: #f2a007;
+  --orange: #f27405;
+  --brown: #8c4303;
+  --capuccino: #f2bc8d;
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+
 .backdrop {
   display: none;
   position: fixed;
@@ -15,7 +24,7 @@
   z-index: 100;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--shadow);
   transition: opacity 0.2s linear;
 }
 
@@ -24,7 +33,7 @@ header {
   width: 100%;
   height: 10vh;
   font-family: 'Roboto', sans-serif;
-  background-color: #8d4304;
+  background-color: var(--brown);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,13 +88,13 @@ header {
 }
 
 .mobile-nav {
-  position: fixed;  
+  position: fixed;
   z-index: 101;
   top: 0;
   left: 0;
   background: #fff;
   width: 80vw;
-  height: 50vh;  
+  height: 50vh;
   border-radius: 5px;
   transform: translateX(-100%);
   transition: transform 300ms ease-out;
@@ -95,19 +104,20 @@ header {
   list-style: none;
   padding: 5vh 1rem;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   text-align: center;
+  margin-top: .5rem;
 }
 
 .mobile-nav li {
-  margin: 2rem 0;
+  margin-bottom: 6vh;
 }
 
 .mobile-nav a {
   text-decoration: none;
   color: #8c4303;
   font-size: 2.4rem;
-  font-family: "Fredoka One", sans-serif;
+  font-family: 'Fredoka One', sans-serif;  
 }
 
 .open {
@@ -165,12 +175,12 @@ footer {
   background-color: #000;
   color: #fff;
   height: 10vh;
-  display: flex;  
+  display: flex;
 }
 
 ul {
   list-style: none;
-  width: 100%;  
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;

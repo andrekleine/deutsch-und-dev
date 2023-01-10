@@ -5,13 +5,13 @@
 }
 
 main {
-  margin-top: 11vh;
+  margin: 11vh 0;
   font-family: 'Roboto', sans-serif;
 }
 
 main img {
   width: 100%;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px var(--shadow);
   border-radius: 5px;
 }
 

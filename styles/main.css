@@ -21,7 +21,7 @@ section h1 {
   font-size: 1.6rem;
   margin-bottom: 0.2rem;
   margin-top: 1rem;
-  color: #8d4304;
+  color: var(--brown);
 }
 
 @media (min-width: 640px) {
@@ -38,10 +38,10 @@ section h1 {
 article {
   height: 20vh;
   position: relative;
-  color: #ffffff;
+  color: #fff;
   -webkit-text-stroke: 0.3px black;
   font-size: 1.5rem;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px var(--shadow);
   border-radius: 5px;
   overflow: hidden;
 }
@@ -82,22 +82,22 @@ article img {
 
 .col-2 {
   grid-area: web-dev-1;
-  background-color: #f27405;
+  background-color: var(--orange);
   width: 65%;
 }
 
 #deutsch-1 {
-  background-color: #f1a008;
+  background-color: var(--mustard);
 }
 
 #deutsch-2 {
-  background-color: #7fd2f2;
+  background-color: var(--blue);
 }
 
 #deutsch-3 {
-  background-color: #f2bc8d;
+  background-color: var(--capuccino);
 }
 
 #dev-2 {
-  background-color: #7fd2f2;
+  background-color: var(--blue);
 }
