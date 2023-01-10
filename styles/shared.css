@@ -102,15 +102,15 @@ header {
 
 .mobile-nav ul {
   list-style: none;
-  padding: 5vh 1rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: .5rem;
+  margin-top: 2vh;
 }
 
 .mobile-nav li {
-  margin-bottom: 6vh;
+  margin-bottom: 4vh;
 }
 
 .mobile-nav a {
