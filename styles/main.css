@@ -4,13 +4,12 @@
   padding: 0;
 }
 
-main {
+#home-main {
   display: flex;
   flex-direction: column;
   margin-top: 10vh;  
   font-family: 'Fredoka One', sans-serif;
 }
-
 
 section {
   display: flex;
